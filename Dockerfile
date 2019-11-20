@@ -14,7 +14,7 @@ RUN apk add --no-cache \
     py-pip 
 
 # Scrip to run after startup
-CMD ["python ./camera.py"]
+CMD ["python camera.py"]
 
 # Build arguments
 ARG BUILD_ARCH
