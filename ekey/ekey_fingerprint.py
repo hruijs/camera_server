@@ -18,7 +18,7 @@ ha_ekeyvoordeur_entity = os.getenv(
     'HA_EKEY_VOORDEUR_ENTITY', 'binary_sensor.ekey_voordeur')
 
 UDP_PORT = 56000
-UDP_IP = 0.0.0.0
+UDP_IP = ''
 
 class udpserver:
     def __init__(self, UDP_IP, UDP_PORT, msg_len=1024):
