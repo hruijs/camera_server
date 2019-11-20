@@ -13,6 +13,7 @@ RUN apk add --no-cache \
     python \
     python-dev \
     py-pip 
+RUN pip install requests
 
 # Scrip to run after startup
 CMD ["python", "./camera.py"]
