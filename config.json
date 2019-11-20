@@ -9,6 +9,5 @@
   "hassio_role": "default",
   "options": {},
   "schema": {},
-  "ports": 
-    - "9999"
+  "ports": {}
 }
