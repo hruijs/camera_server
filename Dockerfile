@@ -4,6 +4,7 @@ FROM ${BUILD_FROM}
 
 # Copy root filesystem
 COPY rootfs /
+ADD camera.py /
 
 # Setup base
 RUN apk add --no-cache \
@@ -14,7 +15,7 @@ RUN apk add --no-cache \
     py-pip 
 
 # Scrip to run after startup
-CMD ["python camera.py"]
+CMD ["python", "./camera.py"]
 
 # Build arguments
 ARG BUILD_ARCH
