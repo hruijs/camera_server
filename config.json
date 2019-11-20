@@ -1,0 +1,14 @@
+{
+  "name": "Camera server",
+  "version": "0.1",
+  "slug": "camera_server",
+  "description": "My camera add-on!",
+  "startup": "application",
+  "boot": "auto",
+  "hassio_api": true,
+  "hassio_role": "default",
+  "options": {},
+  "schema": {},
+  "ports": 
+    - "9999"
+}
