@@ -5,7 +5,7 @@ import json
 import time
 from flask import Flask
 app = Flask(__name__)
-ha_api_url = os.getenv('HA_API_URL', 'http://localhost:8123/api')
+ha_api_url = os.getenv('HA_API_URL', 'http://192.168.1.143:8123/api')
 ha_access_token = os.getenv(
     'HA_ACCESS_TOKEN', 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiI0YjI5MjgxMzI0ZGI0MWY5ODc1MTQzMDhmMTNkMjU3YSIsImlhdCI6MTU0NzgxODEzMywiZXhwIjoxODYzMTc4MTMzfQ.e4S_DpiD5-zMGKOOlXsqbQw_VMt4t6FRwLqggPIUunE')
 ha_ekeygarage_entity = os.getenv(
@@ -18,7 +18,7 @@ ha_ekeyvoordeur_entity = os.getenv(
     'HA_EKEY_VOORDEUR_ENTITY', 'binary_sensor.ekey_voordeur')
 
 UDP_PORT = 56000
-UDP_IP = 0.0.0.0
+UDP_IP = 127.0.0.1
 
 class udpserver:
     def __init__(self, UDP_IP, UDP_PORT, msg_len=1024):
