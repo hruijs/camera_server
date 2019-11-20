@@ -1,0 +1,20 @@
+{
+  "name": "Ekey server",
+  "version": "0.1",
+  "slug": "ekey_server",
+  "description": "My ekey add-on!",
+  "startup": "application",
+  "arch": [
+    "aarch64",
+    "amd64",
+    "armhf",
+    "armv7",
+    "i386"],
+  "boot": "auto",
+  "hassio_api": true,
+  "hassio_role": "default",
+  "options": {},
+  "schema": {},
+  "ports": {
+    "56000/udp": 56000 }
+}
