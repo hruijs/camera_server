@@ -14,6 +14,7 @@ RUN apk add --no-cache \
     python-dev \
     py-pip 
 RUN pip install requests
+RUN pip install Flask
 
 # Scrip to run after startup
 CMD ["python", "./camera.py"]
