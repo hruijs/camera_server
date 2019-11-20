@@ -3,6 +3,7 @@
   "version": "0.1",
   "slug": "camera_server",
   "description": "My camera add-on!",
+  "webui": "https://[HOST]:[PORT:9999]",
   "startup": "application",
   "arch": [
     "aarch64",
@@ -15,5 +16,7 @@
   "hassio_role": "default",
   "options": {},
   "schema": {},
-  "ports": {}
+  "ports": {
+    "9999/tcp": 9999
+  }
 }
